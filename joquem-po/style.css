@@ -1,0 +1,107 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado{
+    opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f98e8e, #46acbd);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+#principal {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 950px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+#titulo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#placar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#jogador, #computador {
+    flex: 1;
+}
+
+#jogador h2, #computador h2 {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+#jogadorPontos, #computadorPontos {
+    font-size: 1.8em;
+    margin-top: 15px;
+    background-color: #2C3E50;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#versus {
+    font-size: 2em;
+    font-weight: 500;
+    color: #ecf0f1;
+    margin-top: 150px;
+}
+
+ul {
+    padding: 0;
+}
+
+#jogadorEscolha li, #computadorEscolha li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#jogadorEscolha li a img, #computadorEscolha li a img {
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+#jogadorEscolha li a:hover img {
+    transform: translateY(-10px);
+}
+
+#mensagem {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #2C3E50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
